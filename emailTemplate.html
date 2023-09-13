@@ -1,191 +1,372 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <style>
-      .email-body {
+      /* .email-body {
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 40px;
+      } */
+
+      .email-body {
+        overflow: hidden; /* To clear floats */
+        padding: 0;
+        margin: 0;
+      }
+
+      .email-body > section {
+          float: left; /* To make them align horizontally */
+          margin-right: 40px; /* To mimic the gap property */
+      }
+
+      /* Remove margin from the last child */
+      .email-body > section:last-child {
+          margin-right: 0;
       }
       .signature {
         font-family: Arial, sans-serif;
       }
-      .name {
-        margin-bottom: 32px;
-        font-size: 16pt;
-        /* letter-spacing: -0.25pt; */
-        color: #b5a498;
-      }
-      .jobTitle {
-        font-size: 10pt;
-        font-family: "Arial", sans-serif;
-        color: #404040;
-        letter-spacing: -0.25pt;
-      }
       a.tel,
       a.cell,
       a.insta {
-        color: inherit;
-        text-decoration: none;
+        color: black;
+        -webkit-text-decoration: none important!;
+        -webkit-text-decoration-color: black important!;
+        text-decoration: none important!;
+        text-decoration-color: black;
         font-size: 7pt;
       }
       .icon,
       .insta {
         margin-right: 4px;
       }
+
+      @media only screen and (min-width: 601px) {
+        .name {
+          margin-bottom: 32px;
+          font-size: 16pt;
+          color: #b5a498;
+        }
+
+        .jobTitle {
+          font-size: 10pt;
+          font-family: Arial, sans-serif;
+          color: #404040;
+          letter-spacing: -0.25pt;
+        }
+      }
+
+      /* Mobile-specific styles */
+      @media only screen and (max-width: 600px) {
+        .email-body {
+          justify-content: space-evenly;
+        }
+
+        .signature {
+          font-size: 12pt; /* Adjust font size for mobile */
+        }
+
+        .name {
+          margin-bottom: 16px; /* Reduce margin for mobile */
+          font-size: 12pt; /* Adjust font size for mobile */
+          color: #b5a498;
+        }
+
+        .jobTitle {
+          font-size: 8pt; /* Adjust font size for mobile */
+          color: #404040;
+        }
+
+        .line {
+          display: none;
+        }
+
+        .instagram {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .instaLinks {
+          display: flex;
+          flex-direction: column;
+        }
+
+        /* Additional adjustments for mobile styling */
+      }
     </style>
   </head>
   <body>
-    <!--[if mso]-->
-
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-        <td valign="top" width="33%">
-          <img src="logo.png" alt="company logo" width="auto" height="125" />
+    <[if mso]>
+      <div style="text-decoration: none !important;"><p><u></u>&nbsp<u></u></p><p><u></u>&nbsp<u></u></p><table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+        style="border-collapse: collapse; font-family: Arial, sans-serif"
+      >
+      <tbody style="text-decoration: none !important;"><tr style="text-decoration: none !important;">
+        <td><table><th><table><tbody><tr><th><td valign="top" width="180" style="display: inline-block; width: 135pt;
+          padding: 0in 5.4pt 0in 5.4pt;
+          height: 72.85pt;" style="line-height: 0">
+          <a href="https://www.aestheticsbiomedical.com/">
+            <!-- <img
+            src="https://i.ibb.co/BnsVMTs/logo.png"
+            alt="company logo"
+            width="175"
+            height="125"
+            /> -->
+          <img
+            src="https://drive.google.com/uc?id=1BkiOIENpbpQNL7ryv2EM4FhrQVAXBw6z"
+            alt="company logo"
+            width="auto"
+            height="125"
+          />
+        </a>
         </td>
-
-        <td valign="top" width="1%">
-          <img src="verticalLine.png" alt="decorative vertical line" />
+        <td style="width: 31.0078px; padding: 0in 5.4pt; height: 128.484px; box-sizing: border-box; word-break: break-word; white-space: normal;"><br></td>
+        <td
+          align="center"
+          valign="middle"
+          width="30"
+          style="vertical-align: middle; width: 22.5pt;
+          padding: 0in 5.4pt 0in 5.4pt;
+          height: 72.85pt;"
+        >
+          <img
+          src="https://i.ibb.co/fqyC82X/vertical-Line.png"
+          alt="decorative vertical line"
+          />
+          <!-- <img
+            src="https://drive.google.com/uc?id=1uOiwngfLouv-mZhyAWco3s1ZQSs7nR_p"
+            alt="decorative vertical line"
+          /> -->
         </td>
+        <td style="width: 31.0078px; padding: 0in 5.4pt; height: 128.484px; box-sizing: border-box; word-break: break-word; white-space: normal;"><br></td>
+        <td align="left" valign="top" width="742" style="width: 556.35pt;
+        padding: 0in 5.4pt 0in 5.4pt;
+        height: 72.85pt;">
+          <span
+            class="name"
+            style="margin-bottom: 32px; font-size: 16pt; color: #b5a498; font-weight: normal;"
+            >Andrew Arias</span
+          ><br />
+          <span
+            class="jobTitle"
+            style="
+              font-size: 10pt;
+              font-family: Arial, sans-serif;
+              color: #404040;
+              letter-spacing: -0.25pt;
+              font-weight: normal;
+            "
+            >Operations Manager</span
+          ><br />
+          <table border="0" cellpadding="0" cellspacing="0">
+            <img
+              style="margin-right: 4px"
+              class="icon"
+              src="https://i.ibb.co/z5xmP1F/phone.png"
+              alt="a phone icon"
+              width="12"
+              height="9"
+            />
+            <!-- <img
+              style="margin-right: 4px"
+              class="icon"
+              src="https://drive.google.com/uc?id=1-vIkFxpwKtRaT90s3vvI2oNmAzIT13De"
+              alt="a phone icon"
+              width="12"
+              height="9"
+            /> -->
+            <a
+              style="color: black; text-decoration: none; text-decoration-color: black !important; font-weight: normal; font-size: 7.0pt;"
+              class="tel"
+              href="tel:602-845-8166"
+              >&nbsp;<span>602-845-8166</span></a
+            >
+          </table>
+          <table border="0" cellpadding="0" cellspacing="0">
+            <img
+              style="margin-right: 4px"
+              class="icon"
+              src="https://i.ibb.co/vj6Fs8H/cell-Phone.png"
+              alt="a cellphone icon"
+              width="12"
+              height="12"
+            />
+            <!-- <img
+              style="margin-right: 4px"
+              class="icon"
+              src="https://drive.google.com/uc?id=171WZir55P-ZJCJ5KrAmRb0vrG7ae6Hsi"
+              alt="a cellphone icon"
+              width="12"
+              height="12"
+            /> -->
+            <a
+              style="color: black; text-decoration: none; font-weight: normal; font-size: 7.0pt;"
+              class="cell"
+              href="tel:602-845-8166"
+              >&nbsp;<span>602-845-8166</span></a
+            >
+          </table>
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tr style="text-decoration: none !important;">
+              <td style="text-decoration: none !important;">
+                <img
+                style="margin-right: 4px"
+                class="icon"
+                src="https://i.ibb.co/smLVr2p/instagram.png"
+                alt="an instagram icon"
+                width="11"
+                height="12"
+              />
+              <!-- <img
+                style="margin-right: 4px"
+                class="icon"
+                src="https://drive.google.com/uc?id=1GkeVt7QF2uZDh-6UfTp7kUeKhXgi9TM3"
+                alt="an instagram icon"
+                width="11"
+                height="12"
+              /></td> -->
+            <td style="color: black; text-decoration: none !important; font-weight: normal; font-size: 7.0pt;"><a
+              style="color: black; text-decoration: none !important; font-weight: normal;"
+              class="insta"
+              href="https://www.instagram.com/vivaceexperience/"
+              target="_blank"
+              >&nbsp;<span>@vivaceexperience</span></a
+            ></td>
+            <td style="color: black; text-decoration: none !important; font-weight: normal; font-size: 7.0pt;"><a
+              style="color: black; text-decoration: none !important; font-weight: normal;"
+              class="insta"
+              href="https://www.instagram.com/skincarethatsallyou/"
+              target="_blank"
+              >&nbsp;<span>@skincarethatsallyou</span></a
+            ></td>
+            <td style="color: black; text-decoration: none !important; font-weight: normal; font-size: 7.0pt;"><a
+              style="color: black; text-decoration: none !important; font-weight: normal; "
+              class="insta"
+              href="https://www.instagram.com/aestheticsbiomedical/"
+              target="_blank"
+              >&nbsp;<span>@aestheticsbiomedical</span></a
+            ></td>
+          </tr>
+          </table>
+        </td></th></tr></tbody></table></th></table></td>
+      </tr></tbody>
+          
+      </table></div>
+      
+    <![endif]-->
+    <![if !mso]><!>
+    <div class="email-body">
+      <section>
+        <img
+          src="https://drive.google.com/uc?id=1BkiOIENpbpQNL7ryv2EM4FhrQVAXBw6z"
+          alt="company logo"
+          width="auto"
+          height="125"
+        />
+      </section>
+      <section class="line">
+        <img
+          src="https://drive.google.com/uc?id=1uOiwngfLouv-mZhyAWco3s1ZQSs7nR_p"
+          alt="decorative vertical line"
+        />
+      </section>
+      <section class="signature" style="font-family: Arial, sans-serif">
+        <span
+          style="margin-bottom: 32px; font-size: 16pt; color: #b5a498"
+          class="name"
+          >Andrew Arias</span
+        ><br />
+        <span
+          style="
+            font-size: 10pt;
+            font-family: Arial, sans-serif;
+            color: #404040;
+            letter-spacing: -0.25pt;
+          "
+          class="jobTitle"
+          >Operations Manager</span
+        >
+        <br />
+        <div class="telephone">
+          <img
+            class="icon"
+            src="https://drive.google.com/uc?id=1-vIkFxpwKtRaT90s3vvI2oNmAzIT13De"
+            alt="a phone icon"
+            style="margin-right: 4px"
+            width="12"
+            height="9"
+          /><a
+            class="tel"
+            href="tel:602-845-8166"
+            style="color: inherit; text-decoration: none; font-size: 7pt"
+            >602-845-8166</a
+          >
+        </div>
 
-        <td valign="top" width="66%">
-          <span class="name">Andrew Arias</span><br />
-          <span class="jobTitle">Operations Manager</span><br />
-          <div class="telephone">
-            <img class="icon" src="phone.png" alt="a phone icon" />
-            <a class="tel" href="tel:602-845-8166">602-845-8166</a>
-          </div>
-          <div class="cellphone">
-            <img class="icon" src="cellPhone.png" alt="a cellphone icon" />
-            <a class="cell" href="tel:602-845-8166">602-845-8166</a>
-          </div>
-          <div class="instagram">
-            <img class="icon" src="instagram.png" alt="an instagram icon" />
+        <div class="cellphone">
+          <img
+            class="icon"
+            src="https://drive.google.com/uc?id=171WZir55P-ZJCJ5KrAmRb0vrG7ae6Hsi"
+            alt="a cellphone icon"
+            style="margin-right: 4px"
+            width="12"
+            height="12"
+          /><a
+            class="cell"
+            href="tel:602-845-8166"
+            style="color: inherit; text-decoration: none; font-size: 7pt"
+            >602-845-8166</a
+          >
+        </div>
+
+        <div class="instagram">
+          <img
+            class="icon"
+            src="https://drive.google.com/uc?id=1GkeVt7QF2uZDh-6UfTp7kUeKhXgi9TM3"
+            alt="an instagram icon"
+            style="margin-right: 4px"
+            width="11"
+            height="12"
+          />
+          <section style="display:inline" class="instaLinks">
             <a
               class="insta"
               href="https://www.instagram.com/vivaceexperience/"
               target="_blank"
+              style="color: inherit; text-decoration: none; font-size: 7pt"
               >@vivaceexperience</a
-            >
-            <a
+            ><a
               class="insta"
               href="https://www.instagram.com/skincarethatsallyou/"
               target="_blank"
-              >@skincarethatsallyou</a
+              style="color: inherit; text-decoration: none; font-size: 7pt"
+              >&nbsp;@skincarethatsallyou</a
             >
             <a
               class="insta"
               href="https://www.instagram.com/aestheticsbiomedical/"
               target="_blank"
+              style="color: inherit; text-decoration: none; font-size: 7pt"
               >@aestheticsbiomedical</a
             >
-          </div>
-        </td>
-      </tr>
-    </table>
-    <!--[endif]-->
-
-    <!--[if !mso]><!-->
-    <div class="email-body">
-      <section>
-        <img src="logo.png" alt="company logo" width="auto" height="125" />
-      </section>
-      <section class="line">
-        <img src="verticalLine.png" alt="decorative vertical line" />
-      </section>
-      <section class="signature">
-        <span class="name">Andrew Arias</span><br />
-        <span class="jobTitle">Operations Manager</span>
-        <br />
-        <div class="telephone">
-          <img class="icon" src="phone.png" alt="a phone icon" /><a
-            class="tel"
-            href="tel:602-845-8166"
-            >602-845-8166</a
-          >
+          </section>
         </div>
-
-        <div class="cellphone">
-          <img class="icon" src="cellPhone.png" alt="a cellphone icon" /><a
-            class="cell"
-            href="tel:602-845-8166"
-            >602-845-8166</a
-          >
-        </div>
-
-        <div class="instagram">
-          <img class="icon" src="instagram.png" alt="an instagram icon" />
-          <a
-            class="insta"
-            href="https://www.instagram.com/vivaceexperience/"
-            target="_blank"
-            >@vivaceexperience</a
-          ><a
-            class="insta"
-            href="https://www.instagram.com/skincarethatsallyou/"
-            target="_blank"
-            >@skincarethatsallyou</a
-          >
-          <a
-            class="insta"
-            href="https://www.instagram.com/aestheticsbiomedical/"
-            target="_blank"
-            >@aestheticsbiomedical</a
-          >
-        </div>
-      </section>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="email-body">
-      <section>
-        <img src="logo.png" alt="company logo" width="auto" height="125" />
-      </section>
-      <section class="line">
-        <img src="verticalLine.png" alt="decorative vertical line" />
-      </section>
-      <section class="signature">
-        <span class="name">Kevin Lopez</span><br />
-        <span class="jobTitle">Awesome Full-stack Developer</span>
-        <br />
-        <div class="telephone">
-          <img class="icon" src="phone.png" alt="a phone icon" /><a
-            class="tel"
-            href="tel:555-555-5555"
-            >555-555-5555</a
-          >
-        </div>
-
-        <div class="cellphone">
-          <img class="icon" src="cellPhone.png" alt="a cellphone icon" /><a
-            class="cell"
-            href="tel: 222-222-2222"
-          >
-            222-222-2222</a
-          >
-        </div>
-
-        <div class="instagram">
-          <img class="icon" src="instagram.png" alt="an instagram icon" />
-          <a
-            class="insta"
-            href="https://www.instagram.com/vivaceexperience/"
-            target="_blank"
-            >@vivaceexperience</a
-          ><a
-            class="insta"
-            href="https://www.instagram.com/skincarethatsallyou/"
-            target="_blank"
-            >@skincarethatsallyou</a
-          >
-          <a
-            class="insta"
-            href="https://www.instagram.com/aestheticsbiomedical/"
-            target="_blank"
-            >@aestheticsbiomedical</a
-          >
+        <div
+          style="
+            display: none;
+            white-space: nowrap;
+            font: 15px courier;
+            line-height: 0;
+          "
+        >
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </div>
       </section>
     </div>
